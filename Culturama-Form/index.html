@@ -1,10 +1,42 @@
 <!DOCTYPE html>
 <html lang="eng">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=devide-width, inicial-scale=1.0">
-        <title>Culturama Form</title>
-    </head>
-    <body>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=devide-width, inicial-scale=1.0">
+    <title>Culturama Form</title>
+</head>
+<body>
+    <header>
+        <h1>Online Research</h1>
+    </header>
+    <section>
+        <form action="" method="get">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="userName">Name</label>
+                <input type="text" name="userName" required>
+
+                <label for="userAge">Age</label>
+                <input type="number" name="userAge" min="12" max="100" required>
+
+                <label for="birthDate">Birth Date</label>
+                <input type="date" name="birthDate">
+
+                <label for="userEmail">E-mail</label>
+                <input type="email" name="userEmail">
+
+                <label for="userPhoneNumber">Phone Number</label>
+                <input type="tel" name="userPhoneNumber" pattern="[0-9]{11}" placeholder="Area Code + Phone Number">
+
+                <label for="UserImage">Photo Upload</label>
+                <input type="file" accept="image/*" name="userImage">
+
+            </fieldset>
+
+
+            <button type="submit">Send</button>
+            
+        </form>
+    </section>
+</body>
 </html>
