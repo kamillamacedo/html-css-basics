@@ -13,23 +13,23 @@
         <form action="" method="get">
             <fieldset>
                 <legend>Personal Information</legend>
-                <label for="userName">Name</label>
-                <input type="text" name="userName" required>
+                <label for="info-name">Name</label>
+                <input id="info-name" type="text" name="userName" required>
 
-                <label for="userAge">Age</label>
-                <input type="number" name="userAge" min="12" max="100" required>
+                <label for="info-age">Age</label>
+                <input id="info-age" type="number" name="userAge" min="12" max="100" required>
 
-                <label for="birthDate">Date of Birth</label>
-                <input type="date" name="birthDate">
+                <label for="info-birthDate">Date of Birth</label>
+                <input id="info-birthDate" type="date" name="userBirthDate">
 
-                <label for="userEmail">E-mail</label>
-                <input type="email" name="userEmail">
+                <label for="info-email">E-mail</label>
+                <input id="info-email" type="email" name="userEmail">
 
-                <label for="userPhoneNumber">Phone Number</label>
-                <input type="tel" name="userPhoneNumber" pattern="[0-9]{11}" placeholder="Area Code + Phone Number">
+                <label for="info-phoneNumber">Phone Number</label>
+                <input id="info-phoneNumber" type="tel" name="userPhoneNumber" pattern="[0-9]{11}" placeholder="Area Code + Phone Number">
 
-                <label for="UserImage">Photo Upload</label>
-                <input type="file" accept="image/*" name="userImage">
+                <label for="info-image">Photo Upload</label>
+                <input id="info-image" type="file" accept="image/*" name="userImage">
 
             </fieldset>
 
@@ -37,34 +37,34 @@
                 <legend>Profile</legend>
 
                 <p>Gender</p>
-                <input type="radio" name="userGender" value="Female">
-                <label for="userGender">Female</label>
+                <input id="gender-female" type="radio" name="userGender" value="Female">
+                <label for="gender-female">Female</label>
 
-                <input type="radio" name="userGender" value="Male">
-                <label for="userGender">Male</label>
+                <input id="gender-male" type="radio" name="userGender" value="Male">
+                <label for="gender-male">Male</label>
 
-                <input type="radio" name="userGender" value="notInformed">
-                <label for="userGender">Prefer not to say</label>
+                <input id="gender-notInformed" type="radio" name="userGender" value="notInformed">
+                <label for="gender-notInformed">Prefer not to say</label>
 
 
                 <p>Ethnic Group</p>
-                <input type="radio" name="userEthnicGroup" value="White">
-                <label for="userEthnicGroup">White</label>
+                <input id="ethnic-white" type="radio" name="userEthnicGroup" value="White">
+                <label for="ethnic-white">White</label>
 
-                <input type="radio" name="userEthnicGroup" value="Mixed">
-                <label for="userEthnicGroup">Mixed</label>
+                <input id="ethnic-mixed" type="radio" name="userEthnicGroup" value="Mixed">
+                <label for="ethnic-mixed">Mixed</label>
 
-                <input type="radio" name="userEthnicGroup" value="Asian">
-                <label for="userEthnicGroup">Asian</label>
+                <input id="ethnic-asian" type="radio" name="userEthnicGroup" value="Asian">
+                <label for="ethnic-asian">Asian</label>
  
-                <input type="radio" name="userEthnicGroup" value="Black">
-                <label for="userEthnicGroup">Black</label>
+                <input id="ethnic-black" type="radio" name="userEthnicGroup" value="Black">
+                <label for="ethnic-black">Black</label>
 
-                <input type="radio" name="userEthnicGroup" value="Other">
-                <label for="userEthnicGroup">Other</label>
+                <input id="ethnic-other" type="radio" name="userEthnicGroup" value="Other">
+                <label for="ethnic-other">Other</label>
 
                 <label for="maritalStatus">Marital Status:</label>
-                <select name="maritalStatus">
+                <select id="maritalStatus" name="usderMaritalStatus">
                     <option value="notInformed">Select</option>
                     <option value="Single">Single</option>
                     <option value="Married">Married</option>
@@ -73,8 +73,8 @@
                 </select>
 
 
-                <label for="userState">U.S State:</label>
-                <select name="userState" required>
+                <label for="state">U.S State:</label>
+                <select id="state" name="userState" required>
                     <option value="notInformed">Select</option>
                     <option value="alabama">Alabama</option>
                     <option value="alaska">Alaska</option>
@@ -134,25 +134,25 @@
                     <option value="virginIslands">Virgin Islands, U.S.</option>
                 </select>
 
-                <label for="userCity">City:</label>
-                <input type="text" name="userCity" autocomplete="address-level2" placeholder="Ex.: New York">
+                <label for="city">City:</label>
+                <input id="city" type="text" name="userCity" autocomplete="address-level2" placeholder="Ex.: New York">
 
             </fieldset>
 
             <fieldset>
                 <legend>Habits</legend> 
                 <p>Social Media</p>
-                <input type="checkbox" name="social" value="instagram">
-                <label for="social">Instagram</label>
+                <input id="social-instagram" type="checkbox" name="social" value="instagram">
+                <label for="social-instagram">Instagram</label>
 
-                <input type="checkbox" name="social" value="fecebook">
-                <label for="social">Facebook</label>
+                <input id="social-facebook" type="checkbox" name="social" value="fecebook">
+                <label for="social-facebook">Facebook</label>
 
-                <input type="checkbox" name="social" value="linkedin">
-                <label for="social">Linkedin</label>
+                <input id="social-linkedin" type="checkbox" name="social" value="linkedin">
+                <label for="social-linkedin">Linkedin</label>
 
-                <input type="checkbox" name="social" value="x">
-                <label for="social">X</label>
+                <input id="social-x" type="checkbox" name="social" value="X">
+                <label for="social-x">X</label>
                 
             
             </fieldset>
