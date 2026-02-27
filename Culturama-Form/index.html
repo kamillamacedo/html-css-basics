@@ -19,7 +19,7 @@
                 <label for="userAge">Age</label>
                 <input type="number" name="userAge" min="12" max="100" required>
 
-                <label for="birthDate">Birth Date</label>
+                <label for="birthDate">Date of Birth</label>
                 <input type="date" name="birthDate">
 
                 <label for="userEmail">E-mail</label>
@@ -33,6 +33,113 @@
 
             </fieldset>
 
+            <fieldset>
+                <legend>Profile</legend>
+
+                <p>Gender</p>
+                <input type="radio" name="userGender" value="Female">
+                <label for="userGender">Female</label>
+
+                <input type="radio" name="userGender" value="Male">
+                <label for="userGender">Male</label>
+
+                <input type="radio" name="userGender" value="notInformed">
+                <label for="userGender">Prefer not to say</label>
+
+
+                <p>Ethnic Group</p>
+                <input type="radio" name="userEthnicGroup" value="White">
+                <label for="userEthnicGroup">White</label>
+
+                <input type="radio" name="userEthnicGroup" value="Mixed">
+                <label for="userEthnicGroup">Mixed</label>
+
+                <input type="radio" name="userEthnicGroup" value="Asian">
+                <label for="userEthnicGroup">Asian</label>
+ 
+                <input type="radio" name="userEthnicGroup" value="Black">
+                <label for="userEthnicGroup">Black</label>
+
+                <input type="radio" name="userEthnicGroup" value="Other">
+                <label for="userEthnicGroup">Other</label>
+
+                <label for="maritalStatus">Marital Status:</label>
+                <select name="maritalStatus">
+                    <option value="notInformed">Select</option>
+                    <option value="Single">Single</option>
+                    <option value="Married">Married</option>
+                    <option value="Divorced">Divorced</option>
+                    <option value="Widowed">Widowed</option>
+                </select>
+
+
+                <label for="userState">U.S State:</label>
+                <select name="userState" required>
+                    <option value="notInformed">Select</option>
+                    <option value="alabama">Alabama</option>
+                    <option value="alaska">Alaska</option>
+                    <option value="arizona">Arizona</option>
+                    <option value="arkansas">Arkansas</option>
+                    <option value="california">California</option>
+                    <option value="colorado">Colorado</option>
+                    <option value="connecticut">Connecticut</option>
+                    <option value="delaware">Delaware</option>
+                    <option value="florida">Florida</option>
+                    <option value="georgia">Georgia</option>
+                    <option value="hawaii">Hawaii</option>
+                    <option value="idaho">Idaho</option>
+                    <option value="illinois">Illinois</option>
+                    <option value="indiana">Indiana</option>
+                    <option value="iowa">Iowa</option>
+                    <option value="kansas">Kansas</option>
+                    <option value="kentucky">Kentucky</option>
+                    <option value="louisiana">Louisiana</option>
+                    <option value="maine">Maine</option>
+                    <option value="maryland">Maryland</option>
+                    <option value="massachusetts">Massachusetts</option>
+                    <option value="michigan">Michigan</option>
+                    <option value="minnesota">Minnesota</option>
+                    <option value="mississippi">Mississippi</option>
+                    <option value="missouri">Missouri</option>
+                    <option value="montana">Montana</option>
+                    <option value="nebraska">Nebraska</option>
+                    <option value="nevada">Nevada</option>
+                    <option value="nwHampshire">Nw Hampshire</option>
+                    <option value="nwJersey">Nw Jersey</option>
+                    <option value="nwMexico">Nw Mexico</option>
+                    <option value="nwYork">Nw York</option>
+                    <option value="northCarolina">North Carolina</option>
+                    <option value="northDakota">North Dakota</option>
+                    <option value="ohio">Ohio</option>
+                    <option value="oklahoma">Oklahoma</option>
+                    <option value="oregon">Oregon</option>
+                    <option value="pennsylvania">Pennsylvania</option>
+                    <option value="rhodeIsland">Rhode Island</option>
+                    <option value="southCarolina">South Carolina</option>
+                    <option value="southDakota">South Dakota</option>
+                    <option value="tennessee">Tennessee</option>
+                    <option value="texas">Texas</option>
+                    <option value="utah">Utah</option>
+                    <option value="vermont">Vermont</option>
+                    <option value="washington">Washington</option>
+                    <option value="westVirginia">West Virginia</option>
+                    <option value="wisconsin">Wisconsin</option>
+                    <option value="wyoming">Wyoming</option>
+                    <option value="districtOfColumbia">District of Columbia</option>
+                    <option value="americanSamoa">American Samoa</option>
+                    <option value="guam">Guam</option>
+                    <option value="northernMarianaIslands">Northern Mariana Islands</option>
+                    <option value="puertoRico">Puerto Rico</option>
+                    <option value="UnitedStatesMinorOutlyingIslands">United States Minor Outlying Islands</option>
+                    <option value="virginIslands">Virgin Islands, U.S.</option>
+                </select>
+
+                <label for="userCity">City:</label>
+                <input type="text" name="userCity" autocomplete="address-level2" placeholder="Ex.: New York">
+
+
+
+            </fieldset>
 
             <button type="submit">Send</button>
             
