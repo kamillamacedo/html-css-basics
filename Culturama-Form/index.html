@@ -170,8 +170,29 @@
 
                 <label for="favoriteColor">Favorite Color:</label>
                 <input type="color" name="userFavoriteColor" id="favoriteColor">
+            </fieldset>
 
-            
+            <fieldset>
+                <legend>Rate your experience</legend>
+                
+                <input id="feedback-veryGood" type="radio" name="userFeedback" value="veryGood">
+                <label for="feedback-veryGood">Very Good</label>
+
+                <input id="feedback-good" type="radio" name="userFeedback" value="Good">
+                <label for="feedback-good">Good</label>
+
+                <input id="feedback-average" type="radio" name="userFeedback" value="Average">
+                <label for="feedback-average">Average</label>
+
+                 <input id="feedback-poor" type="radio" name="userFeedback" value="Poor">
+                <label for="feedback-poor">Poor</label>
+
+                <input id="feedback-veryPoor" type="radio" name="userFeedback" value="veryPoor">
+                <label for="feedback-veryPoor">Very Poor</label><br>
+                
+                <label for="comment">Comments/Suggestions:</label><br>
+                <textarea id="comment" rows="4" cols="51" name="userComment" placeholder="Add a comment..."></textarea><br>
+                
             </fieldset>
 
             <button type="submit">Send</button>
