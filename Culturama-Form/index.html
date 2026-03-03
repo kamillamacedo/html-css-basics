@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="eng">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=devide-width, inicial-scale=1.0">
     <title>Culturama Form</title>
 </head>
+
 <body>
     <header>
         <h1>Online Research</h1>
@@ -26,7 +28,8 @@
                 <input id="info-email" type="email" name="userEmail">
 
                 <label for="info-phoneNumber">Phone Number</label>
-                <input id="info-phoneNumber" type="tel" name="userPhoneNumber" pattern="[0-9]{11}" placeholder="Area Code + Phone Number">
+                <input id="info-phoneNumber" type="tel" name="userPhoneNumber" pattern="[0-9]{11}"
+                    placeholder="Area Code + Phone Number">
 
                 <label for="info-image">Photo Upload</label>
                 <input id="info-image" type="file" accept="image/*" name="userImage">
@@ -56,7 +59,7 @@
 
                 <input id="ethnic-asian" type="radio" name="userEthnicGroup" value="Asian">
                 <label for="ethnic-asian">Asian</label>
- 
+
                 <input id="ethnic-black" type="radio" name="userEthnicGroup" value="Black">
                 <label for="ethnic-black">Black</label>
 
@@ -140,7 +143,7 @@
             </fieldset>
 
             <fieldset>
-                <legend>Habits</legend> 
+                <legend>Habits</legend>
                 <p>Social Media</p>
                 <input id="social-instagram" type="checkbox" name="social" value="instagram">
                 <label for="social-instagram">Instagram</label>
@@ -174,7 +177,7 @@
 
             <fieldset>
                 <legend>Rate your experience</legend>
-                
+
                 <input id="feedback-veryGood" type="radio" name="userFeedback" value="veryGood">
                 <label for="feedback-veryGood">Very Good</label>
 
@@ -184,20 +187,33 @@
                 <input id="feedback-average" type="radio" name="userFeedback" value="Average">
                 <label for="feedback-average">Average</label>
 
-                 <input id="feedback-poor" type="radio" name="userFeedback" value="Poor">
+                <input id="feedback-poor" type="radio" name="userFeedback" value="Poor">
                 <label for="feedback-poor">Poor</label>
 
                 <input id="feedback-veryPoor" type="radio" name="userFeedback" value="veryPoor">
                 <label for="feedback-veryPoor">Very Poor</label><br>
-                
+
                 <label for="comment">Comments/Suggestions:</label><br>
-                <textarea id="comment" rows="4" cols="51" name="userComment" placeholder="Add a comment..."></textarea><br>
-                
+                <textarea id="comment" rows="4" cols="51" name="userComment"
+                    placeholder="Add a comment..."></textarea><br>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Agreement</legend>
+
+                <input type="checkbox" name="userPrivacyPolicy" id="privacyPolicyterm" value="agreed" required>
+                <label for="privacyPolicyterm">I agree to the Privacy Policy terms.</label>
+
+                <input type="checkbox" name="userGetResult" id="getResult" value="agreed">
+                <label for="privacyPolicyterm">I wish to receive the results by email.</label>
+
             </fieldset>
 
             <button type="submit">Send</button>
-            
+
         </form>
     </section>
 </body>
+
 </html>
