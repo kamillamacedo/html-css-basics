@@ -34,7 +34,7 @@ form{
     padding: 15px;
     border-radius: 10px;
     box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 fieldset{
@@ -48,3 +48,67 @@ legend{
     font-weight: bold;
     padding: 0 5px;
 }
+
+input, select,textarea{
+    margin: 10px;
+    padding: 3px;
+    border: 2px solid rgb(199, 193, 193);
+    border-radius: 3px;
+}
+
+input[type="color"]{
+    width: 50px;
+    padding: 0 2px;
+}
+
+input[type="text"]:invalid,input[type="number"]:invalid, input[type="tel"]:invalid, input[type="email"]:invalid{
+   border-color: red;
+}
+
+input[type="text"]:valid,input[type="number"]:valid, input[type="tel"]:valid, input[type="email"]:valid{
+   border-color: green;
+}
+
+textarea{
+    width: 97%;
+}
+
+label{
+    display: inline-block;
+    margin: 8px 5px;
+}
+
+button{
+    width: 150px;
+    height: 30px;
+    margin-right: 20px;
+    border: 2px solid rgb(199, 193, 193);
+    border-radius: 4px;
+    box-shadow: 5px 5px 2px rgba(0,0,0,0.5);
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgb(201, 191, 191);
+    font-weight: bold;
+    font-size: 14px;
+}
+
+button[type="submit"]:hover{
+    color: green;
+    background-color: rgb(175, 226, 183);
+}
+
+button[type="reset"]:hover{
+    color: red;
+    background-color: rgb(226, 175, 175);
+}
+
+#info-name{
+    width: 86%;
+}
+
+#info-email, #info-phoneNumber{
+    width: 30%;
+}
+
