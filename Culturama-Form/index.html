@@ -4,11 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=devide-width, inicial-scale=1.0">
+    <link rel="icon" href="./img/culturama-favico.png">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Work+Sans&display=swap" rel="stylesheet">
+
     <title>Culturama Form</title>
 </head>
 
 <body>
     <header>
+        <img src="./img/logo-culturama.png" alt="Culturama's logo">
         <h1>Online Research</h1>
     </header>
     <section>
@@ -28,8 +36,7 @@
                 <input id="info-email" type="email" name="userEmail">
 
                 <label for="info-phoneNumber">Phone Number</label>
-                <input id="info-phoneNumber" type="tel" name="userPhoneNumber" pattern="[0-9]{11}"
-                    placeholder="Area Code + Phone Number">
+                <input id="info-phoneNumber" type="tel" name="userPhoneNumber" pattern="[0-9]{11}" title="The phone number must be 11-digit number " placeholder="Area Code + Phone Number">
 
                 <label for="info-image">Photo Upload</label>
                 <input id="info-image" type="file" accept="image/*" name="userImage">
