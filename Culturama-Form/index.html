@@ -15,213 +15,215 @@
 </head>
 
 <body>
-    <header>
-        <img src="./img/logo-culturama.png" alt="Culturama's logo">
-        <h1>Online Research</h1>
-    </header>
-    <section>
-        <form action="" method="get">
-            <fieldset>
-                <legend>Personal Information</legend>
-                <label for="info-name">Name</label>
-                <input id="info-name" type="text" name="userName" required>
+    <main>
+        <header>
+            <img src="./img/logo-culturama.png" alt="Culturama's logo">
+            <h1>Online Research</h1>
+        </header>
+        <section>
+            <form action="" method="get">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for="info-name">Name</label>
+                    <input id="info-name" type="text" name="userName" required>
 
-                <label for="info-age">Age</label>
-                <input id="info-age" type="number" name="userAge" min="12" max="100" required>
+                    <label for="info-age">Age</label>
+                    <input id="info-age" type="number" name="userAge" min="12" max="100" required>
 
-                <label for="info-birthDate">Date of Birth</label>
-                <input id="info-birthDate" type="date" name="userBirthDate">
+                    <label for="info-birthDate">Date of Birth</label>
+                    <input id="info-birthDate" type="date" name="userBirthDate"><br>
 
-                <label for="info-email">E-mail</label>
-                <input id="info-email" type="email" name="userEmail">
+                    <label for="info-email">E-mail</label>
+                    <input id="info-email" type="email" name="userEmail">
 
-                <label for="info-phoneNumber">Phone Number</label>
-                <input id="info-phoneNumber" type="tel" name="userPhoneNumber" pattern="[0-9]{11}" title="The phone number must be 11-digit number " placeholder="Area Code + Phone Number">
+                    <label for="info-phoneNumber">Phone Number</label>
+                    <input id="info-phoneNumber" type="tel" name="userPhoneNumber" pattern="[0-9]{11}" title="The phone number must be 11-digit number " placeholder="Area Code + Phone Number"><br>
 
-                <label for="info-image">Photo Upload</label>
-                <input id="info-image" type="file" accept="image/*" name="userImage">
+                    <label for="info-image">Photo Upload</label>
+                    <input id="info-image" type="file" accept="image/*" name="userImage">
 
-            </fieldset>
+                </fieldset>
 
-            <fieldset>
-                <legend>Profile</legend>
+                <fieldset>
+                    <legend>Profile</legend>
 
-                <p>Gender</p>
-                <input id="gender-female" type="radio" name="userGender" value="Female">
-                <label for="gender-female">Female</label>
+                    <p>Gender</p>
+                    <input id="gender-female" type="radio" name="userGender" value="Female">
+                    <label for="gender-female">Female</label>
 
-                <input id="gender-male" type="radio" name="userGender" value="Male">
-                <label for="gender-male">Male</label>
+                    <input id="gender-male" type="radio" name="userGender" value="Male">
+                    <label for="gender-male">Male</label>
 
-                <input id="gender-notInformed" type="radio" name="userGender" value="notInformed">
-                <label for="gender-notInformed">Prefer not to say</label>
-
-
-                <p>Ethnic Group</p>
-                <input id="ethnic-white" type="radio" name="userEthnicGroup" value="White">
-                <label for="ethnic-white">White</label>
-
-                <input id="ethnic-mixed" type="radio" name="userEthnicGroup" value="Mixed">
-                <label for="ethnic-mixed">Mixed</label>
-
-                <input id="ethnic-asian" type="radio" name="userEthnicGroup" value="Asian">
-                <label for="ethnic-asian">Asian</label>
-
-                <input id="ethnic-black" type="radio" name="userEthnicGroup" value="Black">
-                <label for="ethnic-black">Black</label>
-
-                <input id="ethnic-other" type="radio" name="userEthnicGroup" value="Other">
-                <label for="ethnic-other">Other</label>
-
-                <label for="maritalStatus">Marital Status:</label>
-                <select id="maritalStatus" name="usderMaritalStatus">
-                    <option value="notInformed">Select</option>
-                    <option value="Single">Single</option>
-                    <option value="Married">Married</option>
-                    <option value="Divorced">Divorced</option>
-                    <option value="Widowed">Widowed</option>
-                </select>
+                    <input id="gender-notInformed" type="radio" name="userGender" value="notInformed">
+                    <label for="gender-notInformed">Prefer not to say</label>
 
 
-                <label for="state">U.S State:</label>
-                <select id="state" name="userState" required>
-                    <option value="notInformed">Select</option>
-                    <option value="alabama">Alabama</option>
-                    <option value="alaska">Alaska</option>
-                    <option value="arizona">Arizona</option>
-                    <option value="arkansas">Arkansas</option>
-                    <option value="california">California</option>
-                    <option value="colorado">Colorado</option>
-                    <option value="connecticut">Connecticut</option>
-                    <option value="delaware">Delaware</option>
-                    <option value="florida">Florida</option>
-                    <option value="georgia">Georgia</option>
-                    <option value="hawaii">Hawaii</option>
-                    <option value="idaho">Idaho</option>
-                    <option value="illinois">Illinois</option>
-                    <option value="indiana">Indiana</option>
-                    <option value="iowa">Iowa</option>
-                    <option value="kansas">Kansas</option>
-                    <option value="kentucky">Kentucky</option>
-                    <option value="louisiana">Louisiana</option>
-                    <option value="maine">Maine</option>
-                    <option value="maryland">Maryland</option>
-                    <option value="massachusetts">Massachusetts</option>
-                    <option value="michigan">Michigan</option>
-                    <option value="minnesota">Minnesota</option>
-                    <option value="mississippi">Mississippi</option>
-                    <option value="missouri">Missouri</option>
-                    <option value="montana">Montana</option>
-                    <option value="nebraska">Nebraska</option>
-                    <option value="nevada">Nevada</option>
-                    <option value="nwHampshire">Nw Hampshire</option>
-                    <option value="nwJersey">Nw Jersey</option>
-                    <option value="nwMexico">Nw Mexico</option>
-                    <option value="nwYork">Nw York</option>
-                    <option value="northCarolina">North Carolina</option>
-                    <option value="northDakota">North Dakota</option>
-                    <option value="ohio">Ohio</option>
-                    <option value="oklahoma">Oklahoma</option>
-                    <option value="oregon">Oregon</option>
-                    <option value="pennsylvania">Pennsylvania</option>
-                    <option value="rhodeIsland">Rhode Island</option>
-                    <option value="southCarolina">South Carolina</option>
-                    <option value="southDakota">South Dakota</option>
-                    <option value="tennessee">Tennessee</option>
-                    <option value="texas">Texas</option>
-                    <option value="utah">Utah</option>
-                    <option value="vermont">Vermont</option>
-                    <option value="washington">Washington</option>
-                    <option value="westVirginia">West Virginia</option>
-                    <option value="wisconsin">Wisconsin</option>
-                    <option value="wyoming">Wyoming</option>
-                    <option value="districtOfColumbia">District of Columbia</option>
-                    <option value="americanSamoa">American Samoa</option>
-                    <option value="guam">Guam</option>
-                    <option value="northernMarianaIslands">Northern Mariana Islands</option>
-                    <option value="puertoRico">Puerto Rico</option>
-                    <option value="UnitedStatesMinorOutlyingIslands">United States Minor Outlying Islands</option>
-                    <option value="virginIslands">Virgin Islands, U.S.</option>
-                </select>
+                    <p>Ethnic Group</p>
+                    <input id="ethnic-white" type="radio" name="userEthnicGroup" value="White">
+                    <label for="ethnic-white">White</label>
 
-                <label for="city">City:</label>
-                <input id="city" type="text" name="userCity" autocomplete="address-level2" placeholder="Ex.: New York">
+                    <input id="ethnic-mixed" type="radio" name="userEthnicGroup" value="Mixed">
+                    <label for="ethnic-mixed">Mixed</label>
 
-            </fieldset>
+                    <input id="ethnic-asian" type="radio" name="userEthnicGroup" value="Asian">
+                    <label for="ethnic-asian">Asian</label>
 
-            <fieldset>
-                <legend>Habits</legend>
-                <p>Social Media</p>
-                <input id="social-instagram" type="checkbox" name="social" value="instagram">
-                <label for="social-instagram">Instagram</label>
+                    <input id="ethnic-black" type="radio" name="userEthnicGroup" value="Black">
+                    <label for="ethnic-black">Black</label>
 
-                <input id="social-facebook" type="checkbox" name="social" value="fecebook">
-                <label for="social-facebook">Facebook</label>
+                    <input id="ethnic-other" type="radio" name="userEthnicGroup" value="Other">
+                    <label for="ethnic-other">Other</label><br>
 
-                <input id="social-linkedin" type="checkbox" name="social" value="linkedin">
-                <label for="social-linkedin">Linkedin</label>
+                    <label for="maritalStatus">Marital Status:</label>
+                    <select id="maritalStatus" name="usderMaritalStatus">
+                        <option value="notInformed">Select</option>
+                        <option value="Single">Single</option>
+                        <option value="Married">Married</option>
+                        <option value="Divorced">Divorced</option>
+                        <option value="Widowed">Widowed</option>
+                    </select><br>
 
-                <input id="social-x" type="checkbox" name="social" value="X">
-                <label for="social-x">X</label>
 
-                <label for="musciStyle"> Music Style:</label>
-                <input list="styleTypes" id="musciStyle" name="userMusicStyle" type="text">
-                <datalist id="styleTypes">
-                    <option value="Rock">
-                    <option value="Pop">
-                    <option value="Hip Hop/Rap">
-                    <option value="Jazz">
-                    <option value="Hip Hop/Rap">
-                    <option value="R&B/Soul">
-                    <option value="EDM">
-                    <option value="Country">
-                    <option value="Classical">
-                </datalist>
+                    <label for="state">U.S State:</label>
+                    <select id="state" name="userState" required>
+                        <option value="notInformed">Select</option>
+                        <option value="alabama">Alabama</option>
+                        <option value="alaska">Alaska</option>
+                        <option value="arizona">Arizona</option>
+                        <option value="arkansas">Arkansas</option>
+                        <option value="california">California</option>
+                        <option value="colorado">Colorado</option>
+                        <option value="connecticut">Connecticut</option>
+                        <option value="delaware">Delaware</option>
+                        <option value="florida">Florida</option>
+                        <option value="georgia">Georgia</option>
+                        <option value="hawaii">Hawaii</option>
+                        <option value="idaho">Idaho</option>
+                        <option value="illinois">Illinois</option>
+                        <option value="indiana">Indiana</option>
+                        <option value="iowa">Iowa</option>
+                        <option value="kansas">Kansas</option>
+                        <option value="kentucky">Kentucky</option>
+                        <option value="louisiana">Louisiana</option>
+                        <option value="maine">Maine</option>
+                        <option value="maryland">Maryland</option>
+                        <option value="massachusetts">Massachusetts</option>
+                        <option value="michigan">Michigan</option>
+                        <option value="minnesota">Minnesota</option>
+                        <option value="mississippi">Mississippi</option>
+                        <option value="missouri">Missouri</option>
+                        <option value="montana">Montana</option>
+                        <option value="nebraska">Nebraska</option>
+                        <option value="nevada">Nevada</option>
+                        <option value="nwHampshire">Nw Hampshire</option>
+                        <option value="nwJersey">Nw Jersey</option>
+                        <option value="nwMexico">Nw Mexico</option>
+                        <option value="nwYork">Nw York</option>
+                        <option value="northCarolina">North Carolina</option>
+                        <option value="northDakota">North Dakota</option>
+                        <option value="ohio">Ohio</option>
+                        <option value="oklahoma">Oklahoma</option>
+                        <option value="oregon">Oregon</option>
+                        <option value="pennsylvania">Pennsylvania</option>
+                        <option value="rhodeIsland">Rhode Island</option>
+                        <option value="southCarolina">South Carolina</option>
+                        <option value="southDakota">South Dakota</option>
+                        <option value="tennessee">Tennessee</option>
+                        <option value="texas">Texas</option>
+                        <option value="utah">Utah</option>
+                        <option value="vermont">Vermont</option>
+                        <option value="washington">Washington</option>
+                        <option value="westVirginia">West Virginia</option>
+                        <option value="wisconsin">Wisconsin</option>
+                        <option value="wyoming">Wyoming</option>
+                        <option value="districtOfColumbia">District of Columbia</option>
+                        <option value="americanSamoa">American Samoa</option>
+                        <option value="guam">Guam</option>
+                        <option value="northernMarianaIslands">Northern Mariana Islands</option>
+                        <option value="puertoRico">Puerto Rico</option>
+                        <option value="UnitedStatesMinorOutlyingIslands">United States Minor Outlying Islands</option>
+                        <option value="virginIslands">Virgin Islands, U.S.</option>
+                    </select>
 
-                <label for="favoriteColor">Favorite Color:</label>
-                <input type="color" name="userFavoriteColor" id="favoriteColor">
-            </fieldset>
+                    <label for="city">City:</label>
+                    <input id="city" type="text" name="userCity" autocomplete="address-level2" placeholder="Ex.: New York">
 
-            <fieldset>
-                <legend>Rate your experience</legend>
+                </fieldset>
 
-                <input id="feedback-veryGood" type="radio" name="userFeedback" value="veryGood">
-                <label for="feedback-veryGood">Very Good</label>
+                <fieldset>
+                    <legend>Habits</legend>
+                    <p>Social Media:</p>
+                    <input id="social-instagram" type="checkbox" name="social" value="instagram">
+                    <label for="social-instagram">Instagram</label>
 
-                <input id="feedback-good" type="radio" name="userFeedback" value="Good">
-                <label for="feedback-good">Good</label>
+                    <input id="social-facebook" type="checkbox" name="social" value="fecebook">
+                    <label for="social-facebook">Facebook</label>
 
-                <input id="feedback-average" type="radio" name="userFeedback" value="Average">
-                <label for="feedback-average">Average</label>
+                    <input id="social-linkedin" type="checkbox" name="social" value="linkedin">
+                    <label for="social-linkedin">Linkedin</label>
 
-                <input id="feedback-poor" type="radio" name="userFeedback" value="Poor">
-                <label for="feedback-poor">Poor</label>
+                    <input id="social-x" type="checkbox" name="social" value="X">
+                    <label for="social-x">X</label><br>
 
-                <input id="feedback-veryPoor" type="radio" name="userFeedback" value="veryPoor">
-                <label for="feedback-veryPoor">Very Poor</label><br>
+                    <label for="musciStyle"> Music Style:</label>
+                    <input list="styleTypes" id="musciStyle" name="userMusicStyle" type="text">
+                    <datalist id="styleTypes">
+                        <option value="Rock">
+                        <option value="Pop">
+                        <option value="Hip Hop/Rap">
+                        <option value="Jazz">
+                        <option value="Hip Hop/Rap">
+                        <option value="R&B/Soul">
+                        <option value="EDM">
+                        <option value="Country">
+                        <option value="Classical">
+                    </datalist><br>
 
-                <label for="comment">Comments/Suggestions:</label><br>
-                <textarea id="comment" rows="4" cols="51" name="userComment"
-                    placeholder="Add a comment..."></textarea><br>
+                    <label for="favoriteColor">Favorite Color:</label>
+                    <input type="color" name="userFavoriteColor" id="favoriteColor">
+                </fieldset>
 
-            </fieldset>
+                <fieldset>
+                    <legend>Rate your experience</legend>
 
-            <fieldset>
-                <legend>Agreement</legend>
+                    <input id="feedback-veryGood" type="radio" name="userFeedback" value="veryGood">
+                    <label for="feedback-veryGood">Very Good</label>
 
-                <input type="checkbox" name="userPrivacyPolicy" id="privacyPolicyterm" value="agreed" required>
-                <label for="privacyPolicyterm">I agree to the Privacy Policy terms.</label>
+                    <input id="feedback-good" type="radio" name="userFeedback" value="Good">
+                    <label for="feedback-good">Good</label>
 
-                <input type="checkbox" name="userGetResult" id="getResult" value="agreed">
-                <label for="privacyPolicyterm">I wish to receive the results by email.</label>
+                    <input id="feedback-average" type="radio" name="userFeedback" value="Average">
+                    <label for="feedback-average">Average</label>
 
-            </fieldset>
+                    <input id="feedback-poor" type="radio" name="userFeedback" value="Poor">
+                    <label for="feedback-poor">Poor</label>
 
-            <button type="submit">Send</button>
-            <button type="reset">Clear</button>
+                    <input id="feedback-veryPoor" type="radio" name="userFeedback" value="veryPoor">
+                    <label for="feedback-veryPoor">Very Poor</label><br>
 
-        </form>
-    </section>
+                    <label for="comment">Comments/Suggestions:</label><br>
+                    <textarea id="comment" rows="4" cols="51" name="userComment"
+                        placeholder="Add a comment..."></textarea><br>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Agreement</legend>
+
+                    <input type="checkbox" name="userPrivacyPolicy" id="privacyPolicyterm" value="agreed" required>
+                    <label for="privacyPolicyterm">I agree to the Privacy Policy terms.</label><br>
+
+                    <input type="checkbox" name="userGetResult" id="getResult" value="agreed">
+                    <label for="privacyPolicyterm">I wish to receive the results by email.</label>
+
+                </fieldset>
+
+                <button type="submit">Send</button>
+                <button type="reset">Clear</button>
+
+            </form>
+        </section>
+    </main>
 </body>
 
 </html>
