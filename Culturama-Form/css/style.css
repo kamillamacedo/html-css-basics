@@ -112,3 +112,16 @@ button[type="reset"]:hover{
     width: 30%;
 }
 
+.success-body{
+    margin-top: 150px;
+}
+
+.success-h1{
+    text-align: center;
+}
+
+.success-p{
+    text-align: center;
+    margin-top: 10px;
+}
+
