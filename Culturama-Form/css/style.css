@@ -3,13 +3,17 @@
     --card-color:#ffffff;
     --text-color:black;
     --border-color:rgb(199, 193, 193);
+    --hcButton-backgroundColor: rgb(0, 0, 0);
+    --hcButton-text:white;
 }
 
 .high-contrast-theme{
-    --backgroud-color:#000000;
-    --card-color:#272626;
+    --backgroud-color:#2c2a2a;
+    --card-color:#000000;
     --text-color:rgb(255, 255, 255);
     --border-color:rgb(199, 193, 193);
+    --hcButton-backgroundColor: rgb(230, 222, 222);
+    --hcButton-text:black;
 }
 
 *{
@@ -40,9 +44,14 @@ img{
     width: 100px;
 }
 
-
 h1{
     font-family: "Fjalla One", sans-serif;
+}
+
+#toggle-contrast{
+    margin: 5px 0 0 525px;
+    background-color: var(--hcButton-backgroundColor);
+    color: var(--hcButton-text);
 }
 
 form{
