@@ -35,14 +35,15 @@
 
                     <label for="info-email">E-mail</label>
                     <input id="info-email" type="email" name="userEmail"><br>
-                    
+
 
                     <label for="info-phoneNumber">Phone Number</label>
                     <input id="info-phoneNumber" type="tel" name="userPhoneNumber" pattern="[0-9]{11}"
                         title="The phone number must be 11-digit number " placeholder="Area Code + Phone Number" aria-describedby="phoneHelp"><br>
                     <small id="phoneHelp">Fill out with an 11-digit number following the order: area code + phone number. </small>
                     <label for="info-image">Photo Upload</label>
-                    <input id="info-image" type="file" accept="image/*" name="userImage">
+                    <input id="info-image" type="file" accept="image/*" name="userImage" aria-describedby="imageHelp"><br>
+                    <small id="imageHelp">Choose a picture in the PNG or JPEG format.</small>
                 </fieldset>
 
                 <fieldset>
