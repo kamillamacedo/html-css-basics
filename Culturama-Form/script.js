@@ -3,4 +3,4 @@ const bodyElement = document.body;
 
 toggleButton.addEventListener('click', () => {
   bodyElement.classList.toggle('high-contrast-theme');
-});
+}); 
