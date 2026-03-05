@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="eng">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=devide-width, inicial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./img/culturama-favico.png">
     <link rel="stylesheet" href="./css/style.css">
 
@@ -34,11 +34,13 @@
                     <input id="info-birthDate" type="date" name="userBirthDate"><br>
 
                     <label for="info-email">E-mail</label>
-                    <input id="info-email" type="email" name="userEmail">
+                    <input id="info-email" type="email" name="userEmail"><br>
+                    
 
                     <label for="info-phoneNumber">Phone Number</label>
-                    <input id="info-phoneNumber" type="tel" name="userPhoneNumber" pattern="[0-9]{11}" title="The phone number must be 11-digit number " placeholder="Area Code + Phone Number"><br>
-
+                    <input id="info-phoneNumber" type="tel" name="userPhoneNumber" pattern="[0-9]{11}"
+                        title="The phone number must be 11-digit number " placeholder="Area Code + Phone Number" aria-describedby="phoneHelp"><br>
+                    <small id="phoneHelp">Fill out with an 11-digit number following the order: area code + phone number. </small>
                     <label for="info-image">Photo Upload</label>
                     <input id="info-image" type="file" accept="image/*" name="userImage">
                 </fieldset>
@@ -143,7 +145,8 @@
                     </select>
 
                     <label for="city">City:</label>
-                    <input id="city" type="text" name="userCity" autocomplete="address-level2" placeholder="Ex.: New York">
+                    <input id="city" type="text" name="userCity" autocomplete="address-level2"
+                        placeholder="Ex.: New York">
                 </fieldset>
 
                 <fieldset>
@@ -209,7 +212,7 @@
                     <label for="privacyPolicyterm">I agree to the Privacy Policy terms.</label><br>
 
                     <input type="checkbox" name="userGetResult" id="getResult" value="agreed">
-                    <label for="privacyPolicyterm">I wish to receive the results by email.</label>
+                    <label for="getResult">I wish to receive the results by email.</label>
                 </fieldset>
 
                 <button type="submit">Send</button>
