@@ -1,12 +1,28 @@
+:root{
+    --backgroud-color:#f9f9f9;
+    --card-color:#ffffff;
+    --text-color:black;
+    --border-color:rgb(199, 193, 193);
+}
+
+.high-contrast-theme{
+    --backgroud-color:#000000;
+    --card-color:#272626;
+    --text-color:rgb(255, 255, 255);
+    --border-color:rgb(199, 193, 193);
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+
 body{
-    background-color: #f9f9f9;
+    background-color: var(--backgroud-color);
     font-family: "Work Sans", sans-serif;
+    color: var(--text-color);
 }
 
 main{
@@ -30,7 +46,7 @@ h1{
 }
 
 form{
-    background-color: #ffffff;
+    background-color: var(--card-color);
     padding: 15px;
     border-radius: 10px;
     box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
@@ -39,7 +55,7 @@ form{
 
 fieldset{
     padding: 15px;
-    border: 2px solid rgb(199, 193, 193);
+    border: 2px solid var(--border-color);
     border-radius: 4px;
     margin-bottom: 10px;
 }
@@ -57,7 +73,7 @@ label{
 input, select,textarea{
     margin: 10px;
     padding: 3px;
-    border: 2px solid rgb(199, 193, 193);
+    border: 2px solid var(--border-color);
     border-radius: 3px;
 }
 
@@ -92,14 +108,13 @@ button{
     width: 150px;
     height: 30px;
     margin-right: 20px;
-    border: 2px solid rgb(199, 193, 193);
+    border: 2px solid var(--border-color);
     border-radius: 4px;
     box-shadow: 5px 5px 2px rgba(0,0,0,0.5);
     cursor: pointer;
 }
 
 button:hover{
-    background-color: rgb(201, 191, 191);
     font-weight: bold;
     font-size: 14px;
 }
